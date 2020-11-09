@@ -5,10 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.example.howtodoinjava.springeurekaclientstudentservice.domain.Student;
 
@@ -49,5 +46,22 @@ public class StudentServiceController {
 			studentList.add(std);
 		}
 		return studentList;
+	}
+
+	@GetMapping("/getAllStudents")
+	public String getAllStudents (){
+		String elementi = new String();
+
+
+			for (String key: schooDB.keySet()) {
+				elementi += ("\n" + "nome_scuola : " + key);
+				List<Student> appoggio = schooDB.get(key);
+				for(Student singolo : appoggio)
+				elementi += (" nome_studente : " + singolo.getName());
+			}
+
+
+
+		return elementi;
 	}
 }
