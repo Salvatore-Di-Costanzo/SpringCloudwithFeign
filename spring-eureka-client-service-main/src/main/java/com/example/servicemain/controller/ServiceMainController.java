@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 public class ServiceMainController {
 
     @Autowired
-    private ServiceMainClient serviceMainController;
+    private ServiceMainClient serviceMainClient;
     @Autowired
     private ServiceStudent serviceStudent;
     @Autowired
@@ -18,12 +18,12 @@ public class ServiceMainController {
 
     @GetMapping("/findSchool/{name}")
     public String getSchool(@PathVariable String name){
-        return serviceMainController.getSchool(name);
+        return serviceMainClient.getSchool(name);
     }
 
     @GetMapping("/getInfo/{name}")
     public String getInfo(@PathVariable String name){
-        return serviceMainController.getInfo(name);
+        return serviceMainClient.getInfo(name);
     }
 
     @GetMapping("/studenti/{nomeistituto}")
