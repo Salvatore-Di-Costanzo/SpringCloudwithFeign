@@ -3,10 +3,12 @@ package com.example.servicemain.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.openfeign.EnableFeignClients;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @EnableFeignClients
+@RequestMapping("/api")
 public class ServiceMainController {
 
     @Autowired

@@ -2,7 +2,8 @@ package com.example.howtodoinjava.springeurekaclientschoolservice.controller;
 
 
 
-import jdk.incubator.jpackage.internal.Log;
+
+
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -19,10 +20,10 @@ public class SchoolServiceController {
 
     @GetMapping("/getSchoolDetails/{schoolname}")
     public String getStudents(@PathVariable String schoolname) {
-        Log.info("Getting School details for " + schoolname);
+        log.info("Getting School details for " + schoolname);
         String response = myFeignClient.studentService(schoolname);
 
-       Log.info("Response Received as " + response);
+        log.info("Response Received as " + response);
 
         return "School Name -  " + schoolname + " \n Student Details " + response;
     }
