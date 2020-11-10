@@ -1,0 +1,18 @@
+
+^
+java:S3973;"HUse indentation to denote the code conditionally executed by this "for".(ô£üŸ
+7
+java:S16439"Use a StringBuilder instead.(Ÿ‘ª¶ÿÿÿÿÿ
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(áó™Å
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(«¿”í
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(«™½‘úÿÿÿÿ
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(²¾œÛüÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(ó…¨ùÿÿÿÿ
+o
+java:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(›íì
+6
+java:S21295" Remove this "String" constructor(¥…š
